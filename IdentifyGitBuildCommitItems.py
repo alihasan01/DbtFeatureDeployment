@@ -83,7 +83,10 @@ if __name__ == "__main__":
     access_token = os.environ.get('SYSTEM_ACCESSTOKEN')
 
     context = build_context(azdevops_uri ,access_token ,azdevops_project)
-    logger.info("azdevops_uri: %s , access_token: %s , azdevops_project" ,azdevops_uri  ,access_token ,azdevops_project)
+	print("test")
+    print (azdevops_uri)
+	print (access_token)
+	print (azdevops_project)
     commits_on_build = get_changes_on_bld(context ,azdevops_projectid ,azdevops_build_id ,azdevops_build_number)
 
     listof_commits=[]
