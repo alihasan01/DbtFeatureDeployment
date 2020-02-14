@@ -83,6 +83,7 @@ if __name__ == "__main__":
     access_token = os.environ.get('SYSTEM_ACCESSTOKEN')
 
     context = build_context(azdevops_uri ,access_token ,azdevops_project)
+    print(context)
     print("test")
     print (azdevops_uri)
     print (access_token)
